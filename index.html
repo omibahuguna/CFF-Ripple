@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFF Ripple</title>
+  <link rel="icon" type="image/svg+xml" href="./Assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ui-container">
+    <!-- Logo -->
+    <div class="logo-section">
+      <img src="./Assets/Climate Film Fest Logo Blue.svg" alt="Climate Film Fest Logo" style="height:64px;" />
+    </div>
+    
+    <!-- Upload Area -->
+    <div class="upload-container-wrapper">
+      <div id="upload-container" class="upload-container">
+        <button class="upload-button" id="uploadButton">UPLOAD IMAGE</button>
+        <input type="file" id="imgInput" accept="image/*" style="display: none;">
+      </div>
+      <button class="upload-new-btn" id="uploadNewBtn" style="display: none;">UPLOAD NEW</button>
+    </div>
+    
+    <!-- Controls Row -->
+    <div class="controls-row">
+      <!-- Aspect ratio selection buttons -->
+      <div class="radio-section">
+        <button class="radio-button active" data-aspect="original">Original</button>
+        <button class="radio-button" data-aspect="1:1">1:1</button>
+        <button class="radio-button" data-aspect="16:9">16:9</button>
+        <button class="radio-button" data-aspect="4:3">4:3</button>
+      </div>
+      
+      <!-- Ripple type selection buttons -->
+      <div class="radio-section ripple-section">
+        <button class="radio-button" data-ripple="single">Single</button>
+        <button class="radio-button active" data-ripple="double">Double</button>
+      </div>
+      
+      <!-- Side selection buttons -->
+      <div class="radio-section">
+        <button class="radio-button" data-side="left">Left</button>
+        <button class="radio-button active" data-side="both">Both</button>
+        <button class="radio-button" data-side="right">Right</button>
+      </div>
+    </div>
+    
+    <!-- Save Button -->
+    <button id="saveBtn" class="save-button">SAVE IMAGE</button>
+  </div>
+  <div class="canvas-container">
+    <canvas id="rippleCanvas" style="display:none;"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

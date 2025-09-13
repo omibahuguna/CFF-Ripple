@@ -1,0 +1,295 @@
+/* File input styling */
+input[type="file"]::file-selector-button,
+input[type="file"]::-webkit-file-upload-button {
+  font-family: 'CodeNext', system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* TYPE HIERARCHY: CodeNext Font */
+h1, h2, h3, h4, h5, h6/* File input styling */body1, .body1-strong, .body2, .body2-strong, .body3, .body3-strong, .body4, .body4-strong, .caption-large, .caption-small, .eyebrow-large, .eyebrow-small, label, input, .ui-container {
+  font-family: 'CodeNext', system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1400FF;
+}
+
+button {
+  font-family: 'CodeNext', system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 16px;
+  font-size: 18px;
+  background: transparent;
+  border: 2px solid #1400FF;
+  color: #1400FF;
+  cursor: pointer;
+}
+
+/* Typography Hierarchy */
+.feature {
+  font-size: 48pt;
+  line-height: 110%;
+  color: #1400FF;
+  text-align: left;
+  font-weight: normal;
+}
+
+h1 { font-size: 72pt; line-height: 110%; margin: 0 0 0.5em 0; }
+h2 { font-size: 64pt; line-height: 110%; margin: 0 0 0.5em 0; }
+h3 { font-size: 48pt; line-height: 110%; margin: 0 0 0.5em 0; }
+h4 { font-size: 32pt; line-height: 110%; margin: 0 0 0.5em 0; }
+h5 { font-size: 24pt; line-height: 110%; margin: 0 0 0.5em 0; }
+h6 { font-size: 20pt; line-height: 110%; margin: 0 0 0.5em 0; }
+
+.body1, .body1-strong { font-size: 24pt; line-height: 140%; }
+.body2, .body2-strong { font-size: 20pt; line-height: 140%; }
+.body3, .body3-strong { font-size: 16pt; line-height: 140%; }
+.body4, .body4-strong { font-size: 14pt; line-height: 140%; }
+
+.caption-large { font-size: 12pt; line-height: 140%; }
+.caption-small { font-size: 10pt; line-height: 140%; }
+
+.eyebrow-large { font-size: 12pt; line-height: 140%; letter-spacing: 0.125em; }
+.eyebrow-small { font-size: 10pt; line-height: 140%; letter-spacing: 0.125em; }
+
+/* Font Faces */
+@font-face {
+  font-family: 'CodeNext';
+  src: url('./fonts/CodeNext-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CodeNext';
+  src: url('./fonts/CodeNext-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CodeNext-Bold';
+  src: url('./fonts/CodeNext-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Layout */
+body {
+  font-family: 'CodeNext', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1400FF;
+  margin: 0;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.ui-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.logo-section img {
+  height: 40px;
+}
+
+.upload-container {
+  background: #1400FF;
+  min-height: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.upload-container-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.radio-section {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+/* Make the ripple type section narrower */
+.radio-section.ripple-section {
+  flex: 0.6;
+  max-width: 200px;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+canvas {
+  background: transparent;
+}
+
+/* Component Styles */
+.upload-button {
+  color: #ffffff;
+  background: rgba(20, 0, 255, 0.3);
+  border: none;
+  padding: 24px 48px;
+  font-size: 24px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.upload-button:hover {
+  background: rgba(20, 0, 255, 0.6);
+}
+
+.upload-new-btn {
+  background: #ffffff;
+  color: #1400FF;
+  border: 2px solid #1400FF;
+  padding: 8px 16px;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-new-btn:hover {
+  background: #1400FF;
+  color: #ffffff;
+}
+
+.radio-button {
+  background: transparent;
+  color: #1400FF;
+  border: 2px solid #1400FF;
+  padding: 6px 8px;
+  font-size: 12px;
+  height: 60px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: 'CodeNext-Bold', system-ui, sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  transition: all 0.2s ease;
+}
+
+.radio-button:not(:last-child) {
+  border-right: none;
+}
+
+.radio-button:hover,
+.radio-button.active {
+  background: #1400FF;
+  color: #ffffff;
+}
+
+.save-button {
+  background: transparent;
+  color: #1400FF;
+  border: 2px solid #1400FF;
+  padding: 24px;
+  font-size: 24px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button:hover {
+  background: #1400FF;
+  color: #ffffff;
+}
+
+#upload-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.processed-image {
+  max-width: calc(100% - 32px) !important;
+  max-height: calc(100% - 32px) !important;
+  object-fit: contain !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-section img { height: 36px; }
+  .upload-new-btn { font-size: 18px; padding: 16px; height: 60px; }
+  .controls-row { flex-direction: column; gap: 16px; align-items: stretch; }
+  .radio-section { width: 100%; }
+  .radio-section.ripple-section { flex: 1; max-width: none; }
+  .radio-button { padding: 8px 6px; font-size: 10px; height: 50px; }
+  .upload-button { font-size: 20px; padding: 20px 40px; }
+  .save-button { font-size: 20px; padding: 20px; height: 70px; }
+}
+
+@media (max-width: 480px) {
+  .logo-section img { height: 30px; }
+  .upload-new-btn { font-size: 16px; padding: 14px; height: 50px; }
+  .radio-button { font-size: 8px; height: 40px; padding: 4px; }
+  .ui-container { padding: 12px; }
+  .upload-button { font-size: 16px; padding: 16px 32px; }
+  .save-button { font-size: 16px; padding: 16px; height: 60px; }
+}
+
+@media (max-width: 360px) {
+  .logo-section img { height: 24px; }
+  .upload-new-btn { font-size: 14px; padding: 12px; height: 44px; }
+  .radio-button { font-size: 6px; height: 32px; padding: 2px; }
+  .upload-button { font-size: 12px; padding: 12px 24px; }
+  .save-button { font-size: 12px; padding: 12px; height: 50px; }
+}
+
+@media (max-width: 300px) {
+  .logo-section img { height: 16px; }
+}
+
+/* Logo styling */
+#logo-svg svg {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#logo-svg svg:hover {
+  transform: scale(1.05);
+}
