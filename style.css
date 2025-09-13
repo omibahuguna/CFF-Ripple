@@ -60,21 +60,21 @@ h6 { font-size: 20pt; line-height: 110%; margin: 0 0 0.5em 0; }
 /* Font Faces */
 @font-face {
   font-family: 'CodeNext';
-  src: url('./fonts/CodeNext-Book.ttf') format('truetype');
+  src: url('https://omibahuguna.github.io/CFF-Ripple/Fonts/CodeNext-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CodeNext';
-  src: url('./fonts/CodeNext-SemiBold.ttf') format('truetype');
+  src: url('https://omibahuguna.github.io/CFF-Ripple/Fonts/CodeNext-SemiBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CodeNext-Bold';
-  src: url('./fonts/CodeNext-Bold.ttf') format('truetype');
+  src: url('https://omibahuguna.github.io/CFF-Ripple/Fonts/CodeNext-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
